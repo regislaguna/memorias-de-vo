@@ -1,0 +1,368 @@
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../fonts/SoDoSans-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../fonts/SoDoSans-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../fonts/SoDoSans-SemiBold.woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"SoDo Sans", "ellograph-cf", monospace;
+}
+/*body{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}*/
+
+
+ /*Formatação cabeçalho*/
+.area-header {
+     height: 100px;
+     width: 100%;
+     display: flex; 
+     padding-left: 4rem;
+     padding-right: 4rem;
+                
+}
+
+/*Foratação área logo*/
+ .area-logo {
+     height: 100%;
+     width: 500px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 30px;
+                
+}
+
+.area-logo h1{
+     font-size: 24px;
+     padding: 15px;
+     text-transform: uppercase;
+     font-family: Sofia Pro;
+     color: #8c4b3d;
+}
+
+.area-logo img {
+     width: 75px;
+     height: 75px;
+     border-radius: 50%;
+}
+
+ /*Formatação área de naveção*/
+.area-nav {
+     height: 100%;
+     flex: 1;
+}
+            
+.nav-list {
+     height: 100%;
+     width: 65%;
+     display: flex;
+     list-style: none;
+     gap: 10px;
+     justify-content: left;
+                
+ }
+            
+.nav-list-item {
+     padding: 8px;
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     font-weight: bold;
+     font-size: 20px;
+     color: #0a0a0a;
+     text-transform: uppercase;
+     letter-spacing: 0.7;
+ }
+            
+.nav-list-item:hover{
+     color: #fff0ed;
+     cursor: pointer;
+}
+            
+.area-nav-banner {
+     height: 100%;
+     width: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 100px 0px 100px 0px;
+}
+            
+.nav-banner-img {
+     width: 600px;
+     height: 800px;
+     border-radius: 50%;
+}
+
+.store-login {
+    display: flex;
+    font-size: 18px;
+    gap: 12px;
+    text-transform: uppercase;
+    text-decoration: wavy;
+    color: #8c4b3d;
+}
+
+.store-login:hover {
+    color: #fff0ed;
+    cursor: pointer;
+}
+
+.nav-store-login {
+     width: 160px;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+          
+/*.content {
+     /*width: 1440px;*/
+     /*width: 75%;*/
+    /* width: 100%; /*Pega 75% do tamanho do pai (body)*/
+
+            
+.name-area {
+     height: 428px;
+     justify-content: left;
+     align-items: start;           
+}
+            
+.name-text-area {
+     width: 25%;
+     padding: 24px;
+     gap: 12px;
+     color: #080808;
+     margin-left: 190px;
+     margin-top: 50px;
+     
+ }
+
+.name-text-area h1 {
+     font-size: 60px;
+     margin-top: 6px;
+     margin-bottom: 6px;
+     text-transform: uppercase;
+     color:#8c4b3d;
+}
+
+.name-text-area p {
+     font-family: Lato;
+}
+
+.section-produtos {
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     margin-top: 25px;
+    
+}
+
+.section-produtos-text h3 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 38px;
+     margin-top: 8%;
+     margin-bottom: 10px;
+     text-transform: uppercase;
+     
+}
+
+.section-produtos-text p {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     font-size: 20px;
+     text-align: center;
+}
+
+.button{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.ver-mais-btn {
+    display: inline-block;
+    background-color: #b68a59;
+    color: #FFF;
+    padding: 18px 50px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 50px;
+    height: 50px;
+}
+              
+.ver-mais-btn:hover {
+     background-color: #d78f8f;
+}
+
+.section-product-photos {
+     /* Definir largura, usar flexbox para quebra de linha e centralizar itens */
+     /* Adicionar margem para espaçamento */
+     width: 100%;
+     margin-top: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 40px;
+ }
+  
+ 
+.section-product-photoarea {
+     /* Definir largura e altura, adicionar margem para espaçamento */
+     width: 260px;
+     height: 360px;
+     margin: 10px;
+     cursor: pointer;
+ }
+  
+ /* Garantir que as imagens se ajustem à área da foto */
+ .section-product-photoarea img {
+     /* Fazer as imagens preencherem o contêiner mantendo a proporção */
+     width: inherit;
+     height: inherit;
+     border-radius: 20px;
+ }
+  
+ /* Estilizar a sobreposição de informações da foto para efeito de hover */
+ .section-product-photoinfo {
+     /* Posicionar absolutamente, definir tamanho para corresponder à foto e ocultar por padrão */
+     /* Adicionar cor de fundo com transparência */
+     /* Usar flexbox para centralizar o conteúdo verticalmente e horizontalmente */
+     position: absolute;
+     width: inherit;
+     height: inherit;
+     display: none;
+     background-color: rgba(0, 0, 0, 0.7);
+     justify-content: center;
+     align-items: center;
+     color: #FFF;
+     flex-direction: column;
+     border-radius: 20px;
+     transition: opacity 0.3s ease;
+     opacity: 0;
+ }
+  
+ /* Mostrar a sobreposição de informações ao passar o mouse sobre a área da foto */
+ .section-product-photoarea:hover .section-product-photoinfo {
+     /* Exibir a sobreposição ao passar o mouse */
+     opacity: 1;
+     display: flex;
+ }
+  
+ /* Estilizar o título na sobreposição de informações da foto */
+ .section-product-photoinfo h5 {
+     /* Definir tamanho da fonte, peso e tornar o texto maiúsculo */
+     text-transform: uppercase;
+     font-size: 18px;
+     font-weight: 600;
+ }
+  
+ /* Estilizar a descrição na sobreposição de informações da foto */
+ .section-product-photoinfo p {
+     /* Definir tamanho da fonte e adicionar margem para espaçamento */
+     margin-top: 10px;
+ 
+ }
+
+.mais-produtos {
+      width: 100vw;
+      padding: 10px;
+      background-color: #fff8f6;
+      text-align: center;
+}
+              
+.mais-produtos h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #8c4b3d;
+}
+              
+.mais-produtos p {
+      font-size: 1rem;
+      color: #5e4034;
+      font-family: Lato;
+      gap: 8px;
+}
+
+.adress{
+     padding: 10px;
+}
+
+.social-links {
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 20px;
+   }
+ 
+   .social-link {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 50px;
+     background-color: #f0f0f0;
+     border-radius: 50%;
+     color: #333;
+     font-size: 24px;
+     transition: all 0.3s ease;
+     text-decoration: none;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   }
+ 
+   .social-link:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+   }
+ 
+   /* Cores específicas para cada rede social */
+   .social-link:nth-child(1):hover { background-color: #1DB954; color: white; } /* Spotify */
+   .social-link:nth-child(2):hover { background-color: #1877F2; color: white; } /* Facebook */
+   .social-link:nth-child(3):hover { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); color: white; } /* Instagram */
+   .social-link:nth-child(4):hover { background-color: #FF0000; color: white; } /* YouTube */
+   .social-link:nth-child(5):hover { background-color: #000000; color: white; } /* X/Twitter */
+ 
+   /* Responsividade */
+   @media (max-width: 600px) {
+     .social-link {
+       width: 40px;
+       height: 40px;
+       font-size: 20px;
+     }
+   }
+
+.copy-right{
+     margin-top: 10px;
+}
